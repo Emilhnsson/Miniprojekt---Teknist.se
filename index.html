@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- LÄNKAD CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- FA FA ICONS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+<body>
+    
+    <div class="hidden-menu">
+        <div class="hidden-wrapper">
+            <a data-text="x" id="close">x</a>
+            <a href="#" data-text="Hem">Hem</a>
+            <a href="#inriktningar" data-text="Inriktningar">Inriktningar</a>
+            <a href="#socialaMedier" data-text="Sociala Medier">Sociala Medier</a>
+            <a href="#" data-text="Besök oss">Besök oss</a>
+            <a href="#" data-text="Kontakta">Kontakta</a>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="nav">
+            <div class="logo">
+                <h1 href="#">Teknikprogrammet</h1>
+                <div class="logo-img"></div>
+            </div>
+            <div class="menu">
+                <div class="open-close-menu" id="open-close"><i class="fas fa-arrow-down"></i></div>
+                <i class="fas fa-bars" id="burger"></i>
+            </div>
+        </div>
+        <div class="hero-wrapper">
+            <div class="hero">
+                <h1 class="hero-text">Teknik<span class="break">programmet</span><span class="blue">!</span></h1>
+                <div class="hero-content">
+                    <p>Teknikprogrammet vänder sig till dig en högskoleförberedande bred ubildning <br>som vill arbeta med teknik och tekniska processer.</p>
+                    <a href="#" class="hero-content-btn">Läs mer!</a>
+                </div>
+            </div>
+        </div>
+            <div class="continue" id="continue">
+                <div class="arrow"></div>
+            </div>
+    </div>
+
+    <div class="banner" id="inriktningar">
+        <div class="banner-text">
+            <h1 class="banner-h1">Inriktningar</h1>
+        </div>
+    </div>
+
+
+    <div class="inriktningar">
+        <div class="content">
+            <div class="content-wrapper">
+                <div class="content-text">
+                    <h1 class="title-1">Vad du lär dig!</h1>
+                    <p class="p">Med eleven i centrum skapar vi en aktuell, 
+                            intressant och meningsfull studietid som ger 
+                            dig goda förutsättningar för såväl fortsatta 
+                            studier som ett framtida yrkesliv. Allt sker 
+                            i en digital lärmiljö, du får använda professionell 
+                            mjukvara och den senaste tekniken. Du utgår ofta 
+                            från praktiska problem som du löser tillsammans med 
+                            andra eller enskilt, ibland i projektform. Du tränar 
+                            din förmåga att utveckla nya och kreativa lösningar. 
+                            Du tränar dig i att analysera, modellera, utveckla, 
+                            se samband, dra slutsatser och argumentera för att 
+                            bättre förstå tekniska system. Du söker och bearbetar 
+                            information källkritiskt. Under studietiden får du 
+                            möjlighet att starta och driva eget UF-företag.</p>
+                </div>
+            </div>
+            <div class="content-wrapper">
+                <div class="content-text">
+                    <h1 class="title-1">Efter Gymnasiet</h1>
+                    <p>Teknikprogrammet ger bred behörighet att söka till högskola 
+                        och universitet. Du kan välja att utbilda dig till 
+                        civilingenjör, designer, spelutvecklare och mycket mer. 
+                        Inriktningen teknikvetenskap ger, utan vidare val under 
+                        programmets gång, behörighet till civilingenjörs- och 
+                        högskoleingenjörsutbildningar.</p>
+                </div>
+            </div>
+            <div class="content-wrapper">
+                <div class="content-text">
+                    <h1 class="title-1">Behörighetskrav</h1>
+                    <p>Om du söker till Teknikprogrammet måste du ha minst 
+                    betyget E i ämnena:</p>
+                    <ul>
+                        <li>Svenska/Svenska som andraspråk</li>
+                        <li>Matematik</li>
+                        <li>Engelska</li>
+                        <li>Biologi</li>
+                        <li>Kemi</li>
+                        <li>Fysik</li>
+                        <li>6 övriga ämnen</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="carousel">
+        <div class="carousel-img"></div>
+        <div class="carousel-img"></div>
+        <div class="carousel-img"></div>
+
+        <div class="arrow-right">
+            <div class="arrow-r"></div>
+        </div>
+        <div class="arrow-left">
+            <div class="arrow-l"></div>
+        </div>
+    </div>
+
+
+
+    <div class="banner" id="socialaMedier">
+            <div class="banner-text">
+                <h1 class="banner-h1">sociala medier</h1>
+            </div>
+    </div>
+
+
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <!-- EGET SCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
