@@ -170,4 +170,10 @@ arrowLeft.addEventListener('click', function() {
 
 /* */
 
+console.log(window.innerWidth);
+
+if(window.innerWidth > 500) {
+    console.log("Hi");
+}
+
 
