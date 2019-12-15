@@ -78,12 +78,14 @@ p, a, li {
     width:80%;
     height:50vh;
     margin:auto;
+    position: relative;
 }
 
 .content-container-100 {
     width:80%;
     height:100vh;
     margin:auto;
+    position: relative;
 }
 
 .content-container-75 {
@@ -97,6 +99,7 @@ p, a, li {
     width:80%;
     height:200vh;
     margin:auto;
+    position: relative;
 }
 
 /* Första siffran row andra column */
@@ -462,8 +465,7 @@ p, a, li {
     flex-direction: column;
     transition:all .5s ease-in-out;
 
-    background-color:rgba(235, 235, 235, 0.9
-    ,);
+    background-color:rgba(235, 235, 235, 0.9);
     text-align:center;
 }
 

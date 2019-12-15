@@ -649,6 +649,7 @@ p {
     width:100%;
     height:50vh;
     position: relative;
+    margin:0px 0px 50px 0px;
 }
 
 .carousel .carousel-img {
@@ -731,9 +732,74 @@ p {
 /* */
 /* Inrik Img */
 
-.inrik-img {
+.inrik {
     width:100%;
-    height:75vh;
+    height:60vh;
+    position: relative;
 }
 
-/* */
+.inrik-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+}
+
+.inrik-img {
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
+
+.inrik-img:nth-child(1) {
+    background-image: url("../img/inriktningar\ 1.png");
+    background-size:contain;
+    background-position: center;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+
+.inrik-img:nth-child(2) {
+    background-image: url("../img/inriktningar\ 2.png");
+    background-size:contain;
+    background-position: center;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+
+.inrik-img:nth-child(3) {
+    background-image: url("../img/inriktningar\ 3.png");
+    background-size:contain;
+    background-position: center;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+
+/* Inrikningar Images Media Queries */
+
+
+@media screen and (max-width: 768px) {
+    .inrik {
+        height:40vh;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .inrik {
+        height:120vh;
+    }
+    .inrik-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+/* Sociala Medier */
+
+.sociala-medier {
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
