@@ -87,9 +87,10 @@ p, a, li {
 }
 
 .content-container-75 {
-    width:80%;
+    width:90%;
     height:75vh;
     margin:auto;
+    position:relative;
 }
 
 .content-container-200 {
@@ -461,7 +462,8 @@ p, a, li {
     flex-direction: column;
     transition:all .5s ease-in-out;
 
-    background-color:rgba(235, 235, 235, 0.9);
+    background-color:rgba(235, 235, 235, 0.9
+    ,);
     text-align:center;
 }
 
