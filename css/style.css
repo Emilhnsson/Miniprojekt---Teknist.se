@@ -797,12 +797,83 @@ p {
 
 /* Sociala Medier */
 
+.medier {
+    position: relative;
+    width:100%;
+    height:80vh;
+}
+
+.medier-header {
+    width:100%;
+    height:20%;
+    font-size:40px;
+    color:var(--gray);
+    text-transform: uppercase;
+}
+
 .sociala-medier {
     width:100%;
-    height:100%;
+    height:80%;
     position: relative;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
+
+.facebook {
+    overflow:scroll;
+    overflow-x:hidden;
+    height:100%;
+    width:80%;
+    align-self: center;
+    justify-self: center;
+}
+
+.instagram {
+    overflow:hidden;
+    overflow-x:hidden;
+    height:100%;
+    width:80%;
+    align-self: center;
+    justify-self: center;
+}
+
+.twitter {
+    overflow:scroll;
+    overflow-x:hidden;
+    height:100%;
+    width:80%;
+    align-self: center;
+    justify-self: center;
+}
+
+
+/* Kontakta */
+
+.kontakta {
+    width:100%;
+    height:100vh;
+    position: relative;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.kontakta-del-1 {
+    grid-column-start: 1;
+    width:100%;
+    height:100%;
+    background-color:var(--gray);
+}
+
+.kontakta-del-2 {
+    width:100%;
+    height:100%;
+    background-image:url("../img/Del1.jpg");
+    background-size:cover;
+
+}
+
+/* */
+
 
