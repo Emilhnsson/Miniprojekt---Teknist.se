@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- FA FA ICONS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/424d4f7d70.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -70,7 +70,7 @@
                 <div class="c-card-bg">
                     <div class="c-card-text">
                         <h1>Här lär du dig</h1>
-                        <p>Håll över här!</p>
+                        <p id="textmobile">Håll över här!</p>
                     </div>
                     <div class="c-card-text-hidden">
                         <h1>Här lär du dig:</h1>
@@ -91,7 +91,7 @@
                 <div class="c-card-bg">
                     <div class="c-card-text">
                         <h1>Efter gymnasiet</h1>
-                        <p>Håll över här!</p>
+                        <p id="textmobile">Håll över här!</p>
                     </div>
                     <div class="c-card-text-hidden">
                         <h1>Efter gymnasiet:</h1>
@@ -107,7 +107,7 @@
                 <div class="c-card-bg">
                     <div class="c-card-text">
                         <h1>Behörighetskrav</h1>
-                        <p>Håll över här!</p>
+                        <p id="textmobile">Håll över här!</p>
                     </div>
                     <div class="c-card-text-hidden">
                         <h1>Behörighetskrav:</h1>
@@ -126,12 +126,15 @@
             <div class="c-card">
                 <div class="c-card-bg">
                     <div class="c-card-text">
-                        <h1>Vad kommer efter?</h1>
-                        <p>Håll över här!</p>
+                        <h1>Ung Företagsamhet</h1>
+                        <p id="textmobile">Håll över här!</p>
                     </div>
                     <div class="c-card-text-hidden">
-                        <h1>Vad kommer efter:</h1>
-                        <p>Alla möjligheVter...</p>
+                        <h1>Lär dig företagande på riktigt!:</h1>
+                        <p>Som UF-företagare får du under ett läsår arbeta med ett företags alla delar.
+                            Skolan arbetar med Ung Företagssamhet (UF) på Handels- och administrationsprogrammet,
+                             Ekonomiprogrammet och Teknikprogrammet. Vi erbjuder även UF som individuellt val
+                              till samtliga program.</p>
                     </div>
                 </div>
             </div>
@@ -169,18 +172,17 @@
 
     <div class="medier">
         <div class="medier-header flex-cc">
-            <h1>Våra sociala medier!</h1>
+            <h1 class="title-1" style="color:white;">Våra sociala medier!</h1>
         </div>
         <div class="sociala-medier">
             <div class="facebook">
-                <script src="https://www.powr.io/powr.js?platform=html"></script><div class="powr-social-feed" id="fa94f35f_1576513303"></div>
+                <i class="fab fa-facebook-square"></i>
             </div>
             <div class="instagram">
-                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                    <div class="elfsight-app-0abb4f8d-e410-4a17-8146-494989362c0f"></div>
+                <i class="fab fa-instagram"></i>
             </div>
             <div class="twitter">
-<a class="twitter-timeline" href="https://twitter.com/Teknikprogramm1?ref_src=twsrc%5Etfw">Tweets by Teknikprogramm1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <i class="fab fa-twitter-square"></i>
             </div>
         </div>
     </div>
@@ -202,12 +204,79 @@
     <div class="kontakta">
         <div class="kontakta-del-1">
             <!--Foto med rektor o syv-->
+            <div class="kont-card">
+                <div class="card-body">
+                    <img src="./img/ulfnilsson.jpg">
+                    <h1 class="title-2">ULF NILSSON</h1>
+                    <p>Rektor</p>
+                    <p>
+                        Tel. <b>0457-61 84 09</b><br>
+                        kristofer.sjolander@ronneby.se<br><br>
+                        Rektor för skolenhet 2<br>
+                        <b>Bygg- och anläggningsprogrammet Lärling<br>
+                            El- och energiprogrammet<br>
+                            Hantverksprogrammet, inriktning Finsnickeri<br>
+                            Industritekniska programmet<br>
+                            Naturvetenskapsprogrammet<br>
+                            Teknikprogrammet</b>
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="kont-card">
+                    <div class="card-body">
+                        <img src="./img/thowe.jpg">
+                        <h1 class="title-2">THOMAS WESTLING</h1>
+                        <p>Studie- och yrkesvägledare</p>
+                        <p>
+                            Tel. <b>0457-61 83 74</b><br>
+                            thomas.westling@ronneby.se<br><br>
+                            Vägleder elever från följande
+                            program:<br><b>
+                                Flygteknikutbildningen<br>
+                                Naturvetenskapsprogrammet<br>
+                                Teknikprogrammet<br>
+                                Naturbruksgymnasiet<br>
+                                Crea Diem</b>
+    
+                        </p>
+                    </div>
+                </div>
         </div>
 
         <div class="kontakta-del-2">
-            <!-- Detaljer om skolan kontakta -->
         </div>
 
+    </div>
+
+    <div class="footer footer-grid">
+        <div class="footer-info-1">
+            <p>Kontaktinformation<br>
+                Address:<b>
+                Gymnasieskolan Knut Hahn<br>
+                Blasius Königsgatan 27<br>
+                372 35 Ronneby</b><br>
+
+                Telefon:<b>
+                0457-61 89 60</b><br>
+
+                Email:<b>
+                knuthahn@ronneby.se</b></p>
+        </div>
+        <div class="footer-info-2">
+            <ul>
+                <li><a href="#">Hem</a></li>
+                <li><a href="#inriktningar">Inriktningar</a></li>
+                <li><a href="#socialaMedier">Sociala Medier</a></li>
+                <li><a href="#besökoss">Besök oss</a></li>
+                <li><a href="#kontakta">Kontakta</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-creator">
+            <p>&copy;Gjord av Emil Hansson :-)</p>
+        </div>
     </div>
 
     <!-- GSAP -->

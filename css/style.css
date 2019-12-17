@@ -114,12 +114,15 @@ p {
     }
     @media screen and (max-width: 425px) {
         .hidden-wrapper a {
-            font-size:50px;
+            font-size:40px;
+        }
+        .hidden-wrapper #close {
+            font-size:60px;
         }
     }
     @media screen and (max-width: 375px) {
         .hidden-wrapper a {
-            font-size:45px;
+            font-size:40px;
         }
         .hidden-wrapper #close {
             font-size:60px;
@@ -598,7 +601,7 @@ p {
     }
     @media screen and (max-width: 386px) {
         .title-1 {
-            font-size:17px !important;
+            font-size:30px !important;
         }
         .content-text p {
             font-size:11.5px;
@@ -800,7 +803,8 @@ p {
 .medier {
     position: relative;
     width:100%;
-    height:80vh;
+    height:50vh;
+    background-color:#336699;
 }
 
 .medier-header {
@@ -813,40 +817,52 @@ p {
 
 .sociala-medier {
     width:100%;
-    height:80%;
+    height:50%;
     position: relative;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
 
-.facebook {
-    overflow:scroll;
-    overflow-x:hidden;
-    height:100%;
-    width:80%;
-    align-self: center;
-    justify-self: center;
+.facebook i, .instagram i, .twitter i {
+    font-size:80px;
+    margin-right:40px;
+    margin-left:40px;
+    color:white;
+    border:2px solid white;
+    padding:30px;
+    border-radius:50%;
+    transition:all .4s ease-in-out;
 }
 
-.instagram {
-    overflow:hidden;
-    overflow-x:hidden;
-    height:100%;
-    width:80%;
-    align-self: center;
-    justify-self: center;
+.facebook i:hover, .instagram i:hover, .twitter i:hover {
+    background-color:white;
+    color:var(--gray);
 }
 
-.twitter {
-    overflow:scroll;
-    overflow-x:hidden;
-    height:100%;
-    width:80%;
-    align-self: center;
-    justify-self: center;
+@media screen and (max-width: 768px) {
+    .facebook i, .instagram i, .twitter i {
+        font-size:40px;
+        margin-right:20px;
+        margin-left:20px;
+    }
 }
-
+@media screen and (max-width: 425px) {
+    .facebook i, .instagram i, .twitter i {
+        font-size:30px;
+        padding:20px;
+        margin-right:20px;
+        margin-left:20px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .facebook i, .instagram i, .twitter i {
+        font-size:30px;
+        padding:20px;
+        margin-right:10px;
+        margin-left:10px;
+    }
+}
 
 /* Kontakta */
 
@@ -862,18 +878,121 @@ p {
 .kontakta-del-1 {
     grid-column-start: 1;
     width:100%;
-    height:100%;
+    height:100vh;
     background-color:var(--gray);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.kont-card {
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.card-body {
+    width:75%;
+    height:50%;
+    background-color:var(--lightgray);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.card-body h1 {
+    font-size:40px;
+}
+
+.card-body p {
+    font-size:15px;
+    margin:10px;
+}
+
+.card-body img {
+    height:40%;
 }
 
 .kontakta-del-2 {
     width:100%;
     height:100%;
-    background-image:url("../img/Del1.jpg");
+    background-image:url("../img/Del-2.jpg");
     background-size:cover;
-
+    position: relative;
 }
 
+/* Kontakta del 1 card Media Queries */
+
+@media screen and (max-width: 1440px) {
+    .card-body h1 {
+        font-size:25px;
+    }
+    
+    .card-body p {
+        font-size:12px;
+        margin:10px;
+    }
+    .card-body img {
+        height:30%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .kontakta-del-1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .card-body {
+        height:75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-body h1 {
+        font-size:20px;
+    }
+    
+    .card-body p {
+        font-size:12px;
+        margin:10px;
+    }
+    .card-body img {
+        height:25%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .kontakta {
+        grid-template-columns: 2fr 1fr;
+    }
+    .card-body h1 {
+        font-size:15px;
+    }
+    
+    .card-body p {
+        font-size:8px;
+        margin:10px;
+    }
+    .card-body {
+        height:70%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card-body h1 {
+        font-size:15px;
+    }
+    
+    .card-body p {
+        font-size:8px;
+        margin:10px;
+    }
+}
+
+/**/
 /* */
 
 

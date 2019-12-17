@@ -216,7 +216,7 @@ p, a, li {
 
 .card-container {
     width:100%;
-    height:100vh;
+    height:100%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -227,7 +227,7 @@ p, a, li {
     height:90%;
     margin:auto;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
@@ -238,15 +238,18 @@ p, a, li {
     align-self: center;
     justify-self: center;
     overflow: hidden;
+    display:flex;
+    justify-content:center;
+    background-color:gray;
 }
 
 .card:hover .card-text-hidden {
-    top:70%;
+    top:50%;
 }
 
 
 .card:nth-child(1) .card-bg {
-    background-image: url("img");
+    background-image: url("../img/ulfnilsson.jpg");
     background-size:cover;
     background-position: center;
     object-fit: contain;
@@ -259,57 +262,48 @@ p, a, li {
     object-fit: contain;
 }
 
-.card:nth-child(3) .card-bg {
-    background-image: url("img");
-    background-size:cover;
-    background-position: center;
-    object-fit: contain;
-}
-
-.card:nth-child(4) .card-bg {
-    background-image: url("img");
-    background-size:cover;
-    background-position: center;
-    object-fit: contain;
-}
-
 .card-bg {
-    width:100%;
-    height:100%;
+    width:150px;
+    height:200px;
     background-color:gray;
     position: relative;
+    z-index:2;
+    align-self: center;
+    justify-self: flex-start;
 }
 
 
 .card-text {
     position: absolute;
     bottom:0;
-    height:30%;
+    z-index:0;
+    height:50%;
     width:100%;
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items:center;
     flex-direction: column;
 
     background-color:rgb(172, 172, 172);
 }
-
+/*
 .card-text-hidden {
     position: absolute;
     top:100%;
-    height:30%;
+    height:50%;
     width:100%;
     display:flex;
     justify-content: center;
     align-items:center;
     flex-direction: column;
     transition:all .5s ease-in-out;
-
-    background-color:rgb(255, 110, 110);   
+    text-align:center;
+    background-color:white;
+    font-size:20px;
 }
 
 
-
+*/
 /* Card Media Queries */
 
 
@@ -465,7 +459,8 @@ p, a, li {
     flex-direction: column;
     transition:all .5s ease-in-out;
 
-    background-color:rgba(235, 235, 235, 0.9);
+    background-color:rgba(19, 19, 19, 0.9);
+    color:white;
     text-align:center;
 }
 
@@ -596,8 +591,80 @@ p, a, li {
 
 .footer {
     width:100%;
-    height:35vh;
+    height:30vh;
     background-color:rgb(221, 221, 221);
+    position: relative;
+}
+
+.footer-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+.footer-info-1 {
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.footer-info-2 {
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    text-align: left;
+}
+.footer-info-2 a {
+    font-size:20px;
+    color:var(--gray);
+}
+
+.footer-creator {
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-top:1px solid rgb(167, 167, 167);
+}
+
+@media screen and (max-width: 768px) {
+    .footer-info-1 p {
+        font-size:12.5px;
+    }
+    .footer-info-2 a {
+        font-size:15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer-info-1 p {
+        font-size:10px;
+    }
+    .footer-creator p {
+        font-size:10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer-info-1 p {
+        font-size:10px;
+    }
+    .footer-info-2 a {
+        font-size:12.5px;
+    }
+    .footer-creator p {
+        font-size:12.5px;
+    }
 }
 
 /* */
