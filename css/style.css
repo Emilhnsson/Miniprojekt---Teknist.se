@@ -107,14 +107,23 @@ p {
     transition:transform .4s ease-in-out;
 }
     /* Media queries */
+    @media screen and (max-width: 1440px) {
+        .hidden-wrapper a {
+            font-size:65px;
+        }
+        .hidden-wrapper #close {
+            margin-bottom:10px;
+        }
+    }
     @media screen and (max-width: 1024px) {
         .hidden-wrapper a {
-            font-size:80px;
+            font-size:60px;
         }
     }
     @media screen and (max-width: 425px) {
         .hidden-wrapper a {
-            font-size:40px;
+            font-size:50px;
+            color:white;
         }
         .hidden-wrapper #close {
             font-size:60px;
@@ -122,7 +131,8 @@ p {
     }
     @media screen and (max-width: 375px) {
         .hidden-wrapper a {
-            font-size:40px;
+            font-size:48px;
+            -webkit-text-stroke:transparent;
         }
         .hidden-wrapper #close {
             font-size:60px;
@@ -236,6 +246,25 @@ p {
             opacity: 0;
         }
     }
+
+/* Arrow Continue Media Queries */
+
+@media screen and (max-width: 375px) {
+    .continue {
+        top:calc(90% - 37.5px);
+        left:calc(50% - 37.5px);
+    
+        width:75px;
+        height:75px;
+    }
+    .continue .arrow {
+        position: absolute;
+        left:calc(50% - 21px);
+
+        width:40px;
+        height:40px;
+    }
+}
 
 /* Nav */
 
@@ -670,12 +699,12 @@ p {
     background-position: center;
 }
 .carousel .carousel-img:nth-child(2) {
-    background-image: url("../img/building.jpg");
+    background-image: url("../img/carousel-2.jpg");
     background-size:cover;
     background-position: center;
 }
 .carousel .carousel-img:nth-child(3) {
-    background-image: url("../img/hero.jpg");
+    background-image: url("../img/carousel-3.jpg");
     background-size:cover;
     background-position: center;
 }
@@ -798,6 +827,77 @@ p {
     }
 }
 
+/* Besök oss */
+
+.besök {
+    background-color:rgb(247, 247, 247);
+    height:75vh;
+    width:100%;
+    position: relative;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.besök-content {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+}
+
+.content-wrapper {
+    width:75%;
+    height:95%;
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+}
+
+.besök-content h1 {
+    margin:10px;
+}
+
+.besök-content p {
+    margin-bottom:10px !important;
+}
+.besök-content a {
+    font-size:12.5px;
+    padding:7.5px;
+    background-color:#336699;
+    color:white;
+    border:1px solid #336699;
+    border-radius:10px;
+    text-decoration: none;
+    margin-left:10px;
+    transition:all .6s ease-in-out;
+}
+.besök-content a:hover {
+    background-color:var(--gray);
+    border:1px solid var(--gray);
+}
+/* Besök oss Media Queries */
+@media screen and (max-width: 768px) {
+    .besök-content h1 {
+        font-size:17.5px !important;
+    }
+    .besök-content a {
+        padding:5px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .besök {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .besök-content p {
+        font-size:12.5px;
+    }
+}
+
+/* */
+
 /* Sociala Medier */
 
 .medier {
@@ -809,7 +909,7 @@ p {
 
 .medier-header {
     width:100%;
-    height:20%;
+    height:30%;
     font-size:40px;
     color:var(--gray);
     text-transform: uppercase;
@@ -833,13 +933,19 @@ p {
     padding:30px;
     border-radius:50%;
     transition:all .4s ease-in-out;
+    cursor:pointer;
 }
 
 .facebook i:hover, .instagram i:hover, .twitter i:hover {
     background-color:white;
     color:var(--gray);
 }
-
+@media screen and (max-width: 1440px) {
+    .facebook i, .instagram i, .twitter i {
+        padding:20px;
+        font-size:60px;
+    }
+} 
 @media screen and (max-width: 768px) {
     .facebook i, .instagram i, .twitter i {
         font-size:40px;
@@ -868,18 +974,19 @@ p {
 
 .kontakta {
     width:100%;
-    height:100vh;
+    height:125vh;
     position: relative;
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
 }
 
 .kontakta-del-1 {
     grid-column-start: 1;
     width:100%;
-    height:100vh;
-    background-color:var(--gray);
+    height:100%;
+
+    background: linear-gradient(#555555, var(--gray));
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -895,12 +1002,12 @@ p {
 
 .card-body {
     width:75%;
-    height:50%;
+    height:55%;
     background-color:var(--lightgray);
     display:flex;
     flex-direction: column;
     align-items:center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .card-body h1 {
@@ -928,12 +1035,29 @@ p {
 
 @media screen and (max-width: 1440px) {
     .card-body h1 {
-        font-size:25px;
+        font-size:20px;
     }
     
     .card-body p {
-        font-size:12px;
-        margin:10px;
+        font-size:12.5px;
+        margin:5px;
+    }
+    .card-body img {
+        height:30%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .card-body {
+        height: 60%;
+    }
+    .card-body h1 {
+        font-size:15px;
+    }
+    
+    .card-body p {
+        font-size:10px;
+        margin:7.5px;
     }
     .card-body img {
         height:30%;
@@ -968,6 +1092,7 @@ p {
     .kontakta {
         grid-template-columns: 2fr 1fr;
     }
+
     .card-body h1 {
         font-size:15px;
     }
@@ -977,7 +1102,7 @@ p {
         margin:10px;
     }
     .card-body {
-        height:70%;
+        height:75%;
     }
 }
 

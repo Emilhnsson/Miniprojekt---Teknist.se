@@ -399,28 +399,28 @@ p, a, li {
 }
 
 .c-card:nth-child(1) .c-card-bg {
-    background-image: url("../img/AlfredRotterRaket3.jpg");
+    background-image: url("../img/te_w.jpg");
     background-size:cover;
     background-position: center;
     object-fit: contain;
 }
 
 .c-card:nth-child(2) .c-card-bg {
-    background-image: url("../img/building.jpg");
+    background-image: url("../img/eftergymn.jpg");
     background-size:cover;
     background-position: center;
     object-fit: contain;
 }
 
 .c-card:nth-child(3) .c-card-bg {
-    background-image: url("../img/hero.jpg");
+    background-image: url("../img/behörighetskrav.jpg");
     background-size:cover;
     background-position: center;
     object-fit: contain;
 }
 
 .c-card:nth-child(4) .c-card-bg {
-    background-image: url("../img/AntonAlfredRaket.jpg");
+    background-image: url("../img/uf.jpg");
     background-size:cover;
     background-position: center;
     object-fit: contain;
@@ -445,7 +445,7 @@ p, a, li {
 }
 
 .c-card-text p {
-    font-size:1vw;
+    font-size:40px;
 }
 
 .c-card-text-hidden {
@@ -485,7 +485,7 @@ p, a, li {
     }
     
     .c-card-text p {
-        font-size:1.5vw;
+        font-size:2.5vw;
     }
 }
 
@@ -517,7 +517,7 @@ p, a, li {
     }
     
     .c-card-text p {
-        font-size:4vw;
+        font-size:5vw;
     }
 }
 
@@ -533,7 +533,7 @@ p, a, li {
     }
     
     .c-card-text p {
-        font-size:4vw;
+        font-size:6vw;
     }
 }
 
@@ -598,18 +598,10 @@ p, a, li {
 
 .footer-grid {
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:1fr;
     grid-template-rows: 2fr 1fr;
 }
 
-.footer-info-1 {
-    width:100%;
-    height:100%;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    flex-direction: column;
-}
 
 .footer-info-2 {
     width:100%;
@@ -617,12 +609,19 @@ p, a, li {
     display:flex;
     justify-content: center;
     align-items:center;
-    flex-direction: column;
     text-align: left;
 }
+.footer-info-2 ul {
+    display:flex;
+}
+.footer-info-2 ul li {
+    margin-left:40px;
+}
+
 .footer-info-2 a {
     font-size:20px;
     color:var(--gray);
+    text-decoration: none;
 }
 
 .footer-creator {
@@ -631,34 +630,31 @@ p, a, li {
     display:flex;
     justify-content: center;
     align-items:center;
-    flex-direction: column;
     grid-column-start: 1;
     grid-column-end: 3;
     border-top:1px solid rgb(167, 167, 167);
 }
 
+@media screen and (max-width: 1440) {
+
+}
+
 @media screen and (max-width: 768px) {
-    .footer-info-1 p {
+    .footer-info-2 a {
         font-size:12.5px;
     }
-    .footer-info-2 a {
-        font-size:15px;
+    .footer-info-2 ul {
+        flex-direction: column;
     }
 }
 
 @media screen and (max-width: 375px) {
-    .footer-info-1 p {
-        font-size:10px;
-    }
     .footer-creator p {
         font-size:10px;
     }
 }
 
 @media screen and (max-width: 320px) {
-    .footer-info-1 p {
-        font-size:10px;
-    }
     .footer-info-2 a {
         font-size:12.5px;
     }

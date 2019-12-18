@@ -176,4 +176,31 @@ if(window.innerWidth > 500) {
     console.log("Hi");
 }
 
+/* Social Media Buttons */
+
+var facebook = document.querySelector("#facebook");
+var instagram = document.querySelector("#instagram");
+var twitter = document.querySelector("#twitter");
+
+facebook.addEventListener('click', function() {
+    window.open("https://www.facebook.com/teknist/", '_blank');
+});
+instagram.addEventListener('click', function() {
+    window.open("https://www.instagram.com/teknikprogrammet/", '_blank');
+});
+twitter.addEventListener('click', function() {
+    window.open("https://twitter.com/teknikprogramm1", '_blank');
+});
+
+
+
+/* Ändra alla hover text till klicka text för mobilen */
+
+var mobileText = document.querySelectorAll("#textmobile");
+
+if(window.innerWidth < 1024) {
+    for(var i = 0; i < mobileText.length; i++) {
+        mobileText[i].innerHTML = "Klicka här!";
+    }
+}
 
