@@ -445,12 +445,12 @@ p, a, li {
 }
 
 .c-card-text p {
-    font-size:40px;
+    font-size:20px;
 }
 
 .c-card-text-hidden {
     position: absolute;
-    top:100%;
+    top:125%;
     height:100%;
     width:100%;
     display:flex;
